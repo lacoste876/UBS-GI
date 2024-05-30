@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+
+<!-- Création formulaire recherche interne -->
+<head>
+    <meta charset="UTF-8">
+    <title>Informations</title>
+</head>
+<body>
+    <!-- Lien vers la page2 -->
+    <a href="page2.html"><img src="Logo.jpg" width="250" height="180" alt="Logo"></a>
+    <script src="informations.js"></script>
+ 
+    <!-- page plus d'in formations: ajouter un cadre en ligne -->
+    <!-- iframe: afficher une page web dans une autre page web -->
+    <h2> Plus d'informations</h2>
+    <iframe src="https://www-ensibs.univ-ubs.fr/fr/index.html"
+        height="300px" width="100%" id="iframe_ENSIBS"></iframe>
+        <h3>Découvrir plus d'informations sur notre site:
+            <a href="https://www-ensibs.univ-ubs.fr/fr/formations/formations/diplome-d-ingenieur-DI/sciences-technologies-sante-STS/
+            diplome-d-ingenieur-genie-industriel-4-0-en-apprentissage-KWKK6ZQQ.html" target="iframe_GI" id="iframe_ENSIBS_a">ensibs.fr</a>
+        </h3>
+    <!--modifier le contenu et le style par JS-->
+    <h2>Nous contacter</h2>
+    <h3 id="myfooterJS2">Retrouver nous sur notre site de Lorient</h3>
+
+    <button type="button" onclick="myFunction()" id="button-myfooter">Retrouver nous!</button>
+
+    <!--afficher date et heure par JS-->
+    <h2>Dernière consultation</h2>
+    <button type="button" id="button-myfooter-informations"
+        onclick="document.getElementById('consultation').innerHTML =
+        new Date().toLocaleString('fr-FR', { weekday: 'long', year: 'numeric', month: 'long',
+        day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' })">
+        Cliquer ici
+    </button>
+<p id="consultation"></p>
+
+</body>
+</html>

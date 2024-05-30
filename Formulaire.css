@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke; /* couleur fond de la page */
+    margin: 0; /* marge horizontale et verticale espacement externe */
+    padding: 20px; /* espacement interne */
+}
+
+h1 {
+    text-align: center;
+    color: green; /* couleur du texte h1 */
+    font-style: italic; /* mettre le texte h1 en italique */
+}
+
+form { /* Styles pour le formulaire */
+    background-color: white; /* couleur fond du formulaire*/
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px; /* largeur maximal du formulaire */
+    margin: 0 auto; /* marge à 0 et centrage auto horizontal */
+}
+
+label { /* style pour les labels */
+    display: block; /* Définir l'élement  comme un bloc, prenant toute la largeur du formulaire */
+    margin-bottom: 8px; /* ajouter un espace de 8 pixels enbas de l'élément */
+    font-weight: bold; /* texte en gras */
+    color: #555; /* couleur du text */
+}
+
+/* styles pour les champs de texte et autres élements de formulaire */
+/* Appliquer les styles aux champs de texte, email, date, select et textarea */
+input[type="text"], input[type="email"], input[type="date"], select, textarea { /* tous ces types respectent les propriétés suivantes : */
+    width: calc(100% - 20px); /* la largeur: 100% du conteneur parent moins 20 pixels */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black; /* solid veut dire que l'on affiche les bordures */
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /*Inclure le padding et la bordure dans la largeur totale */
+}
+
+/* Styles pour les boutons radio et les cases à cocher */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px; /* marge à droite des boutons radio et des cases à cocher sont à 10px*/
+}
+
+
+/* Styles pour les boutons radio et les cases à cocher */
+input[type="radio"] + label, /* on prend en considération le paramètre (bouton) radio pour le centré avec le texte */
+input[type="checkbox"] + label {
+    display: inline-block; /* texte aligné avec le bouton */
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+/* Styles pour le bouton de soumissions */
+input[type="submit"] {
+    background-color: green; /* couleur du du fond du bouton */
+    color: white; /* couleur du texte envoyer */
+    padding: 10px 20px; /* 10 px verticale / 20px horizontale */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
